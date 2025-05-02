@@ -19,13 +19,16 @@
       text-align: center;
     }
     header img {
-      max-width: 200px;
-      margin-bottom: 10px;
+      width: 220px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
     }
     nav {
       display: flex;
       justify-content: center;
       background-color: #444;
+      flex-wrap: wrap;
     }
     nav a {
       color: white;
@@ -44,6 +47,25 @@
       padding: 40px;
       max-width: 1000px;
       margin: auto;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 220px;
+      padding: 10px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 5px;
     }
     footer {
       background-color: #222;
@@ -88,24 +110,39 @@
 
   <section id="urunler" class="section">
     <h2>Ürünlerimiz</h2>
-    <ul>
-      <li>Boyanabilir Çıta</li>
-      <li>Saray Tavan Motifleri</li>
-      <li>Lambri Kaplama</li>
-      <li>3D Duvar Panelleri</li>
-      <li>Süpürgelik ve Profil Sistemleri</li>
-    </ul>
+    <div class="products">
+      <div class="product-card">
+        <img src="d7b1d63d-092b-47d4-9c20-1a6137a29a6a.jpg" alt="Lambri Panel - Ceviz">
+        <h4>Ceviz Renk Akustik Panel</h4>
+        <p>Modern mekanlar için sıcak ahşap görünümü.</p>
+      </div>
+      <div class="product-card">
+        <img src="637c4815-695f-4657-a040-1a3b36228a1a.jpg" alt="Lambri Panel - Gri">
+        <h4>Antrasit Gri Akustik Panel</h4>
+        <p>Şık ve çağdaş iç mekanlar için ideal seçim.</p>
+      </div>
+      <div class="product-card">
+        <img src="7b42a4b4-2940-47a4-be1d-d9e4d242f78c.jpg" alt="Lambri Panel - Siyah Parlak">
+        <h4>Parlak Siyah Panel</h4>
+        <p>Minimalist ve lüks dekorasyon için parlak siyah yüzey.</p>
+      </div>
+      <div class="product-card">
+        <img src="80a18961-1a4e-4e9e-bb96-a040d618f598.jpg" alt="Lambri Panel - Mat Siyah">
+        <h4>Mat Siyah Panel</h4>
+        <p>Soft dokulu, sade ve karizmatik görünüm.</p>
+      </div>
+    </div>
   </section>
 
   <section id="siparis" class="section">
     <h2>Sipariş Ver</h2>
     <p>Hemen WhatsApp üzerinden sipariş vermek için tıklayın:</p>
-    <a class="btn" href="https://wa.me/905469672524" target="_blank">WhatsApp Sipariş</a>
+    <a class="btn" href="https://wa.me/90469672524" target="_blank">WhatsApp Sipariş</a>
   </section>
 
   <section id="iletisim" class="section">
     <h2>İletişim</h2>
-    <p><strong>Telefon:</strong> +90 546 967 25 24</p>
+    <p><strong>Telefon:</strong> +90 546 967 2524</p>
     <p><strong>E-posta:</strong> info@dekopantr.com</p>
     <p><strong>Adres:</strong> İstanbul, Türkiye</p>
   </section>
